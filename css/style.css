@@ -568,6 +568,42 @@ p {
   box-shadow: var(--shadow-card);
 }
 
+/* ============================================
+   Learn grid (flat tiles, no icons)
+   ============================================ */
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4) var(--space-3);
+}
+
+@media (max-width: 900px) {
+  .learn-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .learn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.learn-grid__item {
+  border-top: 2px solid var(--color-accent);
+  padding-top: var(--space-2);
+}
+
+.learn-grid__item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.learn-grid__item p {
+  font-size: 0.92rem;
+  margin: 0;
+}
+
 .card__icon {
   width: 44px;
   height: 44px;
