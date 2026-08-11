@@ -43,14 +43,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -287,6 +280,12 @@ p {
   color: var(--color-accent);
 }
 
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
 .nav__links {
   display: flex;
   align-items: center;
@@ -306,12 +305,6 @@ p {
 .nav__links a[aria-current="page"] {
   color: var(--color-ink);
   border-bottom-color: var(--color-accent);
-}
-
-.nav__cta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
 }
 
 .nav__toggle {
@@ -361,10 +354,6 @@ p {
   .nav__links .btn {
     margin-top: var(--space-2);
     width: 100%;
-  }
-
-  .nav__cta .btn {
-    display: none;
   }
 
   .nav__toggle {
@@ -713,7 +702,7 @@ p {
 }
 
 .faq-item.is-open .faq-item__answer {
-  max-height: 240px;
+  max-height: 400px;
 }
 
 .faq-item__answer p {
