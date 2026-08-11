@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact KARATOTS | Book a Free Trial</title>
+  <meta name="description" content="Get in touch with KARATOTS to book your child's two free trial karate sessions in Bristol. We usually reply within 24 hours." />
+  <link rel="canonical" href="https://karatots.co.uk/contact" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact KARATOTS | Book a Free Trial" />
+  <meta property="og:description" content="Book your child's two free trial karate sessions with KARATOTS, the children's branch of Karate Bristol." />
+  <meta property="og:url" content="https://karatots.co.uk/contact" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="index.html">KARA<span>TOTS</span></a>
+      <div class="nav__right">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn btn--primary" href="contact.html">Book a Free Trial</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" style="padding-block: var(--space-6) var(--space-5);">
+      <div class="container">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Let's Get Your Child Started</h1>
+        <p class="lede">Interested in KARATOTS? Have a question about classes or want to book a free trial? Get in touch with David and the Karate Bristol team.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT DETAILS + FORM -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="split" style="align-items: start;">
+          <div>
+            <h2>Contact details</h2>
+            <p><strong>Phone</strong><br /><a href="tel:07882385936">07882 385936</a></p>
+            <p><strong>Email</strong><br /><a href="mailto:karatebristoldojo@gmail.com">karatebristoldojo@gmail.com</a></p>
+            <p>We usually reply within 24 hours.</p>
+            <p>Every enquiry gets two free trial sessions to try before deciding whether to join — no obligation.</p>
+          </div>
+
+          <div>
+            <form id="enquiryForm" class="form" novalidate>
+              <div class="form__row">
+                <div class="form-field">
+                  <label for="parentName">Parent / Guardian Name *</label>
+                  <input type="text" id="parentName" name="parentName" autocomplete="name" required />
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required />
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form-field">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="childName">Child's Name *</label>
+                  <input type="text" id="childName" name="childName" required />
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form-field">
+                  <label for="childAge">Child's Age *</label>
+                  <input type="number" id="childAge" name="childAge" min="2" max="12" required />
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="interest">What are you interested in? *</label>
+                  <select id="interest" name="interest" required>
+                    <option value="">Please choose…</option>
+                    <option value="Book a free trial">Book a free trial</option>
+                    <option value="General enquiry">General enquiry</option>
+                    <option value="Class information">Class information</option>
+                    <option value="Pricing">Pricing</option>
+                    <option value="Locations">Locations</option>
+                    <option value="Something else">Something else</option>
+                  </select>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="preferredArea">Preferred area (optional)</label>
+                <input type="text" id="preferredArea" name="preferredArea" placeholder="e.g. Frampton Cotterell, Coalpit Heath…" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message (optional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <div class="form-field--checkbox">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <label for="consent">I agree to KARATOTS / Karate Bristol contacting me regarding my enquiry. *</label>
+                </div>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block">Send Enquiry</button>
+            </form>
+
+            <div id="formConfirmation" class="form-confirmation" hidden>
+              <p style="margin-bottom:0;">Thanks — we've received your enquiry. David or the Karate Bristol team will get back to you within 24 hours. Your email app should now be open to send the details — if it didn't open, please email us directly at <a href="mailto:karatebristoldojo@gmail.com">karatebristoldojo@gmail.com</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">KARATOTS</div>
+          <p class="footer__tagline">A branch of Karate Bristol</p>
+          <p>07882 385936<br /><a href="mailto:karatebristoldojo@gmail.com">karatebristoldojo@gmail.com</a></p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Book a Free Trial</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© 2026 KARATOTS, a branch of Karate Bristol. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a class="btn btn--primary btn--block" href="contact.html">Book a Free Trial</a>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

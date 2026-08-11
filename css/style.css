@@ -807,6 +807,7 @@ p {
 }
 
 .form-field--checkbox {
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 0.6rem;
