@@ -31,12 +31,37 @@
         <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
           <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
         </button>
-        <ul class="nav__links" id="navLinks">
-          <li><a href="index.html" class="menu-link"><span class="menu-link__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>Home</a></li>
-          <li><a href="about.html" class="menu-link"><span class="menu-link__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>About</a></li>
-          <li><a href="contact.html" aria-current="page" class="menu-link"><span class="menu-link__arrow" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>Contact</a></li>
-          <li><a class="btn btn--primary nav__links-cta" href="contact.html">Book a Free Trial</a></li>
-        </ul>
+        <div class="nav__links" id="navLinks">
+          <div class="nav__scrim"></div>
+          <div class="nav__panel">
+            <div class="nav__panel-layer nav__panel-layer--1"></div>
+            <div class="nav__panel-layer nav__panel-layer--2"></div>
+            <div class="nav__panel-shapes" aria-hidden="true">
+              <svg class="nav__shape" data-shape="1" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+                <circle cx="220" cy="80" r="70" fill="rgba(189,42,38,0.20)" />
+                <circle cx="70" cy="230" r="100" fill="rgba(189,42,38,0.12)" />
+                <circle cx="250" cy="330" r="45" fill="rgba(189,42,38,0.18)" />
+              </svg>
+              <svg class="nav__shape" data-shape="2" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+                <path d="M-20 110 Q 100 50 220 110 T 340 110" stroke="rgba(189,42,38,0.24)" stroke-width="26" fill="none" />
+                <path d="M-20 220 Q 100 160 220 220 T 340 220" stroke="rgba(189,42,38,0.16)" stroke-width="18" fill="none" />
+                <path d="M-20 320 Q 100 260 220 320 T 340 320" stroke="rgba(189,42,38,0.1)" stroke-width="14" fill="none" />
+              </svg>
+              <svg class="nav__shape" data-shape="3" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+                <circle cx="40" cy="60" r="7" fill="rgba(189,42,38,0.3)" /><circle cx="120" cy="60" r="7" fill="rgba(189,42,38,0.3)" /><circle cx="200" cy="60" r="7" fill="rgba(189,42,38,0.3)" /><circle cx="270" cy="60" r="7" fill="rgba(189,42,38,0.3)" />
+                <circle cx="80" cy="150" r="9" fill="rgba(189,42,38,0.24)" /><circle cx="160" cy="150" r="9" fill="rgba(189,42,38,0.24)" /><circle cx="240" cy="150" r="9" fill="rgba(189,42,38,0.24)" />
+                <circle cx="40" cy="240" r="7" fill="rgba(189,42,38,0.2)" /><circle cx="120" cy="240" r="7" fill="rgba(189,42,38,0.2)" /><circle cx="200" cy="240" r="7" fill="rgba(189,42,38,0.2)" /><circle cx="270" cy="240" r="7" fill="rgba(189,42,38,0.2)" />
+                <circle cx="80" cy="330" r="6" fill="rgba(189,42,38,0.16)" /><circle cx="160" cy="330" r="6" fill="rgba(189,42,38,0.16)" /><circle cx="240" cy="330" r="6" fill="rgba(189,42,38,0.16)" />
+              </svg>
+            </div>
+            <ul class="nav__panel-list">
+              <li><a href="index.html" class="menu-link">Home</a></li>
+              <li><a href="about.html" class="menu-link">About</a></li>
+              <li><a href="contact.html" aria-current="page" class="menu-link">Contact</a></li>
+              <li><a class="btn btn--primary nav__links-cta" href="contact.html">Book a Free Trial</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

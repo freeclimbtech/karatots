@@ -3,20 +3,32 @@
 
   const ENQUIRY_EMAIL = "karatebristoldojo@gmail.com";
 
-  // Mobile nav toggle
+  // Mobile/tablet nav toggle: hamburger opens a full-screen panel menu
   const nav = document.querySelector(".nav");
   const navToggle = document.querySelector(".nav__toggle");
   if (nav && navToggle) {
+    const closeMenu = () => {
+      nav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    };
+
     navToggle.addEventListener("click", () => {
       const isOpen = nav.classList.toggle("is-open");
       navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
     nav.querySelectorAll(".nav__links a").forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        navToggle.setAttribute("aria-expanded", "false");
-      });
+      link.addEventListener("click", closeMenu);
+    });
+
+    const scrim = nav.querySelector(".nav__scrim");
+    if (scrim) scrim.addEventListener("click", closeMenu);
+
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && nav.classList.contains("is-open")) {
+        closeMenu();
+        navToggle.focus();
+      }
     });
   }
 
