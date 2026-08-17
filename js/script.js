@@ -44,7 +44,7 @@
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
 
-  // FAQ accordion — one open at a time
+  // FAQ accordion, one open at a time
   document.querySelectorAll(".faq-item").forEach((item) => {
     const question = item.querySelector(".faq-item__question");
     if (!question) return;
