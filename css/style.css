@@ -622,6 +622,17 @@ p {
   body {
     padding-bottom: 76px;
   }
+
+  /* Contact page is already the booking destination, so the persistent
+     CTAs elsewhere on the site would just be pointing at themselves. */
+  .page-contact .sticky-cta,
+  .page-contact .nav__header-cta {
+    display: none;
+  }
+
+  body.page-contact {
+    padding-bottom: 0;
+  }
 }
 
 /* ============================================
