@@ -278,6 +278,23 @@ p {
   height: 40px;
   width: auto;
   display: block;
+  transition: opacity 0.25s ease;
+}
+
+.nav__logo-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.nav.is-open .nav__logo-light {
+  opacity: 0;
+}
+
+.nav.is-open .nav__logo-dark {
+  opacity: 1;
 }
 
 .nav__right {
